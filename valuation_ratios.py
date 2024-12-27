@@ -10,7 +10,7 @@ def price_to_book(company: Company) -> float:
 
 # P/E
 def earning_per_share(company: Company) -> float:
-    return company.net_income.total() / company.number_of_shares
+    return company.current_net_income.total() / company.number_of_shares
 
 def price_to_earn(company: Company) -> float:
     return company.stock_price / earning_per_share(company)

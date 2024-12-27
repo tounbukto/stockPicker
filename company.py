@@ -12,7 +12,7 @@ class Revenue:
         return self.q1 + self.q2 + self.q3 + self.q4
 
 class Company:
-    def __init__(self, name, stock_price, number_of_shares, assets, equity, cash, debt, revenue: Revenue, last_revenu: Revenue, EBITDA, net_income: Revenue, last_net_income: Revenue):
+    def __init__(self, name, stock_price, number_of_shares, assets, equity, cash, debt, revenue: Revenue, last_revenu: Revenue, EBITDA, current_net_income: Revenue, last_net_income: Revenue):
         self.name = name
         self.stock_price = stock_price
         self.number_of_shares = number_of_shares
@@ -23,7 +23,7 @@ class Company:
         self.revenue = revenue
         self.last_revenu = last_revenu
         self.EBITDA = EBITDA
-        self.net_income = net_income
+        self.current_net_income = current_net_income
         self.last_net_income = last_net_income
         
 

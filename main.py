@@ -18,4 +18,5 @@ def json_serializable(obj):
 
 
 file = open("result.json", "w")
-print(json.dump(global_report,file, default=json_serializable))
+json.dump(global_report,file, default=json_serializable, indent=4)
+file.close()

@@ -3,25 +3,26 @@ from company import Revenue
 
 # dummy data
 def load_company() -> Company:
-    amazon_revenue = Revenue(q1=127.36e9, q2=134.38e9, q3=143.08e9, q4=149.20e9)  # Values in billions of USD
-    amazon_last_revenue = Revenue(q1=116.44e9, q2=121.23e9, q3=127.10e9, q4=137.41e9)  # Last year's quarters
+    amazon_revenue = Revenue(q1=157.72e9, q2=177.90e9, q3=188.47e9, q4=199.12e9)  # Values in billions of USD
+    amazon_last_revenue = Revenue(q1=147.44e9, q2=157.30e9, q3=167.20e9, q4=178.00e9)  # Last year's quarters
 
-    amazon_net_income = Revenue(q1=3.17e9, q2=6.75e9, q3=9.88e9, q4=14.14e9)  # Values in billions of USD
-    amazon_last_net_income = Revenue(q1=8.11e9, q2=7.78e9, q3=2.87e9, q4=14.32e9)
+    amazon_net_income = Revenue(q1=6.31e9, q2=8.72e9, q3=12.47e9, q4=16.54e9)  # Values in billions of USD
+    amazon_last_net_income = Revenue(q1=5.61e9, q2=6.89e9, q3=8.15e9, q4=10.79e9)  # Last year's quarters
+
 
 
     amazon = Company(
         name="amazon", 
-        stock_price=140.0,  # Example stock price in USD
-        number_of_shares=10.23e9,  # Outstanding shares in billions
-        assets=468.4e9,  # Total assets in billions of USD
-        equity=118.1e9,  # Shareholders' equity in billions of USD
-        cash=64.4e9,  # Cash and cash equivalents in billions of USD
-        debt=164.7e9,  # Total debt in billions of USD
+        stock_price=229.05,  # Example stock price in USD
+        number_of_shares=10.42e9,  # Outstanding shares in billions
+        assets=620.1e9,  # Total assets in billions of USD
+        equity=49.8e9,  # Shareholders' equity in billions of USD
+        cash=32.2e9,  # Cash and cash equivalents in billions of USD
+        debt=154.7e9,  # Total debt in billions of USD
         revenue=amazon_revenue,
         last_revenu=amazon_last_revenue,
-        EBITDA=58.56e9,  # EBITDA in billions of USD
-        net_income=amazon_net_income,
+        EBITDA=111.56e9,  # EBITDA in billions of USD
+        current_net_income=amazon_net_income,
         last_net_income=amazon_last_net_income
     )
     return amazon
